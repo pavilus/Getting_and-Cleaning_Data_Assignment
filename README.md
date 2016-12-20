@@ -16,7 +16,7 @@ The run_analysis.R script does the following:
 4. Appropriately labels the data set with descriptive activity names. 
 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
 
-The final database is output as UCIDatabase.csv. 
+The final database is output as UCIDatabase.txt 
 
 ### More Information
 You can find additional information about the variables and data in the CodeBook.MD file.

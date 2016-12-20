@@ -73,4 +73,5 @@ colnames(allData) <- colNames
 cleanData  <-allData[,names(allData) != 'activityType']
 myData <- aggregate(cleanData[,names(cleanData) != c('activityId','subjectId')],by=list(activityId=cleanData$activityId,subjectId = cleanData$subjectId),mean)
 myData <- merge(myData,activityType,by='activityId',all.x=TRUE)
-write.csv(myData, "UCIDatabase.csv", row.names=TRUE)
+#write.csv(myData, "UCIDatabase.csv", row.names=TRUE)
+write.table(myData, "UCIDatabase.txt", row.names=FALSE)
